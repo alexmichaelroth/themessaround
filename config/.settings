@@ -1,0 +1,19 @@
+{
+    "username": "alexmichaelroth@gmail.com", 
+    "environment": "developer", 
+    "project_name": "Messaround New", 
+    "workspace": "C:\\Users\\alroth\\Documents\\GitHub", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "0VIPA3V7BOLNWG001VBP2FXEFIWG05IH", 
+    "metadata_container": "1dcC00000004DTiIAM", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource"
+    ]
+}

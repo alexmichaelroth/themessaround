@@ -1,0 +1,35 @@
+<apex:page controller="AtestClass">
+    <script type="text/javascript">
+    function getRemoteAccountAddress() {
+            var actName = document.getElementById('acctSearch').value;
+            Visualforce.remoting.Manager.invokeAction(
+                        '{!$RemoteAction.AtestClass.getAccountCity}',actName,
+                            function(result, event){
+                                    if (event.status) {
+                                            if(result != null){
+                                                alert(result.BillingStreet + ' - ' + result.BillingCity);
+                                                document.getElementById('actAddressDisplay').innerHTML 
+                                                = result.BillingStreet + ' - ' + result.BillingCity;
+                                            }
+                                            else{
+                                                document.getElementById('actAddressDisplay').innerHTML = 'No Data Found';
+                                            }
+                                    } else if (event.type === 'exception') {
+                                            document.getElementById("responseErrors").innerHTML = event.message;
+                                    } else {
+                                            document.getElementById("responseErrors").innerHTML = event.message;
+                                    }
+                            },
+                            {escape: true}
+                    );
+            }
+    </script>
+
+<input type="text" id="acctSearch" size="100"/>
+&nbsp;&nbsp;
+<a href="javascript:getRemoteAccountAddress();">Find Address</a>
+<br/><br/>
+
+<div id="actAddressDisplay"></div>
+
+</apex:page>
