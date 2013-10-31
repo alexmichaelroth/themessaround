@@ -17,6 +17,44 @@
         <name>ApexTrigger</name>
     </types>
     <types>
+        <members>Account</members>
+        <members>AccountContactRole</members>
+        <members>Activity</members>
+        <members>Asset</members>
+        <members>Asset__c</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>CaseContactRole</members>
+        <members>Conference_Room__c</members>
+        <members>Contact</members>
+        <members>ContentVersion</members>
+        <members>Contract</members>
+        <members>ContractContactRole</members>
+        <members>Event</members>
+        <members>Idea</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
+        <members>OpportunityCompetitor</members>
+        <members>OpportunityContactRole</members>
+        <members>OpportunityLineItem</members>
+        <members>PartnerRole</members>
+        <members>Pricebook2</members>
+        <members>Product2</members>
+        <members>Site</members>
+        <members>SiteChangelist</members>
+        <members>Solution</members>
+        <members>Staff_Asset__c</members>
+        <members>Staff__c</members>
+        <members>Task</members>
+        <members>User</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Profile</name>
+    </types>
+    <types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
